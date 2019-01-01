@@ -26,7 +26,7 @@ Resources:
       FunctionName: !Sub ${AWS::StackName}-function71FE578C
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
-        - ResourceName: function71FE578C
+        - ResourceName: getform
       CodeUri: src/function71FE578C
       Handler: index.handler
       Runtime: nodejs8.10
@@ -42,6 +42,8 @@ Resources:
             Path: /get-form
             Method: GET
             RestApiId: !Ref api5D69814D
+    Metadata:
+      StackeryName: getform
 Parameters:
   StackTagName:
     Type: String
