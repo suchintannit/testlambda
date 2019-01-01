@@ -27,7 +27,7 @@ Resources:
       Description: !Sub
         - Stack ${StackTagName} Environment ${EnvironmentTagName} Function ${ResourceName}
         - ResourceName: getform
-      CodeUri: src/function71FE578C
+      CodeUri: src/getform
       Handler: index.handler
       Runtime: nodejs8.10
       MemorySize: 3008
